@@ -54,12 +54,12 @@ Ready to contribute? Here's how to set up `broadworks_ocip` for local developmen
 $ git clone git@github.com:your_name_here/broadworks_ocip.git
 ```
 
-3. We use [`poetry`](https://python-poetry.org/) for development, this is how you set up your
+3. We use [`uv`](https://python-uv.org/) for development, this is how you set up your
    fork for local development
 
 ```bash
 $ cd broadworks_ocip/
-$ poetry install
+$ uv sync
 ```
 
 4. Create a branch for local development:

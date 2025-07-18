@@ -162,7 +162,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 -   Various improvements to schema parsing into classes
 -   Session Id is no longer hidden on command classes
 -   Additional how/why documentation
--   Converted to use poetry for development management
+-   Converted to use uv for development management
 
 ## [0.5.3] - 2020-10-07
 

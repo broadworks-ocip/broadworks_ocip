@@ -18,14 +18,11 @@ jobs:
         environment: deployment
 
         steps:
-            - name: Set up repository
-              uses: nigelm/gh_actions_python_poetry_setup@v2
+            - name: Check out the repository
+              uses: actions/checkout@v4
               with:
-                  python-version: 3.10.10
-                  poetry-version: 2.1.3
-                  # needs fetch-depth to be set due to release history deduction
-                  fetch-depth: 0
-                  token: ${{ secrets.GH_DEPLOY_TOKEN }}
+                fetch-depth: 0
+                token: ${{ secrets.GH_DEPLOY_TOKEN }}
 
             #----------------------------------------------
             # release
@@ -37,6 +34,6 @@ jobs:
                   # source .venv/bin/activate
                   git config user.name github-actions
                   git config user.email github-actions@github.com
-                  poetry run semantic-release publish
+                  uv run semantic-release publish
 
 # end
