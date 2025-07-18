@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!--next-version-placeholder-->
 
+## v3.0.0 (2025-07-18)
+### Breaking
+* Removed support for Python 3.6, 3.7 and 3.8
+* Added support to Python 3.11, 3.12 and 3.13
+* Added new organization and maintainer `staticdev`
+* Replaced Poetry with UV
+* Minor Pyupgrades
+* Bumped all dependencies and pre-commit hooks
+* Temporarily disabled mkdocs generation
+
 ## v2.2.0 (2024-04-01)
 ### Feature
 * Note that this is now based on the R25 schema ([`6cb821b`](https://github.com/nigelm/broadworks_ocip/commit/6cb821b04974cbbb25f3700912b09baf2410e85a))

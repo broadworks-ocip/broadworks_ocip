@@ -18,6 +18,6 @@ jobs:
               uses: astral-sh/setup-uv@v6
               with:
                 version: ">=0.5.24"
-
-            - name: Publish docs
-              run: uv run mkdocs gh-deploy
+            # Temporarily disabled due to issues with mkdocs-gh-deploy
+            # - name: Publish docs
+            #   run: uv run mkdocs gh-deploy

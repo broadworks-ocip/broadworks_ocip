@@ -1,6 +1,6 @@
 [project]
 name = "broadworks_ocip"
-version = "2.2.0"
+version = "3.0.0"
 description = "API interface to the OCI-P provisioning interface of a Broadworks softswitch"
 requires-python = ">=3.9.0"
 authors = [
