@@ -16,6 +16,11 @@ jobs:
             - name: Check out the repository
               uses: actions/checkout@v4
 
+            - name: Install UV
+              uses: astral-sh/setup-uv@v6
+              with:
+                version: ">=0.5.24"
+
             - name: Build package
               run: |
                 uv build

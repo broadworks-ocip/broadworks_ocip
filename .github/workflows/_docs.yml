@@ -14,6 +14,10 @@ jobs:
             - name: Setup Git Commit Info
               run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
 
+            - name: Install UV
+              uses: astral-sh/setup-uv@v6
+              with:
+                version: ">=0.5.24"
+
             - name: Publish docs
               run: uv run mkdocs gh-deploy
-# end
