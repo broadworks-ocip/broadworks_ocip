@@ -4,17 +4,37 @@ on:
     workflow_call:
 
 jobs:
-    test:
-        name: Run Tests
-        runs-on: ubuntu-latest
-        steps:
-            - name: Check out the repository
-              uses: actions/checkout@v4
+  tests:
+    name: ${{ matrix.session }} ${{ matrix.python }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { python: "3.13", os: "ubuntu-latest", session: "tests" }
+          - { python: "3.12", os: "ubuntu-latest", session: "tests" }
+          - { python: "3.11", os: "ubuntu-latest", session: "tests" }
+          - { python: "3.10", os: "ubuntu-latest", session: "tests" }
+          - { python: "3.9", os: "ubuntu-latest", session: "tests" }
 
-            - name: Install UV
-              uses: astral-sh/setup-uv@v6
-              with:
-                version: ">=0.5.24"
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
 
-            - name: Run tests
-              run: make test
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install UV
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: ">=0.5.24"
+
+      - name: Install dependencies
+        run: |
+          uv sync --all-extras --frozen
+
+      - name: Run Nox
+        run: |
+          uv run nox -s tests --force-color --python=${{ matrix.python }}

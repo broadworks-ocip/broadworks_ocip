@@ -46,15 +46,16 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "mkdocs-material>=8.1.7",
+    "mkdocs>=1.2.1",
+    "mkdocstrings>=0.29.0",
+    "nox>=2024.10.9",
+    "py-markdown-table>=0.2.2",
     "pytest>=8.3.5",
+    "python-semantic-release>=7.23.0",
+    "tiangolo-markdown-include>=0.7.0",
     "toposort>=1.7",
     "xmlschema>=1.9.2",
-    "mkdocs>=1.2.1",
-    "mkdocs-material>=8.1.7",
-    "mkdocstrings>=0.29.0",
-    "tiangolo-markdown-include>=0.7.0",
-    "python-semantic-release>=7.23.0",
-    "py-markdown-table>=0.2.2",
 ]
 
 [tool.semantic_release]
