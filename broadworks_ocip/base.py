@@ -282,9 +282,9 @@ class OCIType:
                 sub_element.xmlname,
                 nsmap=self._default_nsmap(),
             )
-            if sub_element.type == bool:
+            if sub_element.type is bool:
                 elem.text = "true" if value else "false"
-            elif sub_element.type == int:
+            elif sub_element.type is int:
                 elem.text = str(value)
             else:
                 elem.text = value
@@ -393,7 +393,7 @@ class OCIType:
                     )
                 else:
                     return elem.type.build_from_etree_(api=api, element=node)
-            elif elem.type == bool:
+            elif elem.type is bool:
                 return elem.type(
                     True if node.text == "true" else False,
                 )

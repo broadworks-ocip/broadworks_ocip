@@ -14,11 +14,11 @@ classifiers = [
     "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 include = [
@@ -34,13 +34,13 @@ exclude = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.6.2"
-lxml = "4.9.4"
-attrs = "^21.4.0"
-null-object = "^0.1.0"
-pyyaml = "6.0.1"
+python = ">=3.8.0"
+lxml = ">=5.4.0"
+attrs = ">=21.4.0"
+null-object = ">=0.1.0"
+pyyaml = ">=6.0.1"
 
-[tool.poetry.dev-dependencies]
+[poetry.group.dev.dependencies]
 pytest = "^6.2.5"
 toposort = "^1.7"
 xmlschema = "^1.9.2"
