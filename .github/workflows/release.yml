@@ -5,16 +5,14 @@ jobs:
         uses: ./.github/workflows/_test.yml
     lint:
         uses: ./.github/workflows/_linting.yml
-    ## NOX test removed because the workflow currently broken (fails to install)
-    # full_test:
-    #   needs: [tests, lint]
-    #   uses: ./.github/workflows/_full_tests.yml
+    full_test:
+      needs: [tests, lint]
+      uses: ./.github/workflows/_full_tests.yml
 
     release:
         runs-on: ubuntu-latest
         concurrency: release
-        # needs: full_test
-        needs: [tests, lint]
+        needs: [full_test]
         environment: deployment
 
         steps:
@@ -35,5 +33,3 @@ jobs:
                   git config user.name github-actions
                   git config user.email github-actions@github.com
                   uv run semantic-release publish
-
-# end
