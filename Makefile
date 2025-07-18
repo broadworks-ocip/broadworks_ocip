@@ -35,6 +35,7 @@ lint: ## check style with flake8
 
 .PHONY: test
 test: ## run tests quickly with the default Python
+	poetry install --with dev
 	poetry run pytest
 
 .PHONY: nox

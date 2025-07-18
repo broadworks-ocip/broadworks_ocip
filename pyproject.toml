@@ -1,8 +1,11 @@
-[tool.poetry]
+[project]
 name = "broadworks_ocip"
 version = "2.2.0"
 description = "API interface to the OCI-P provisioning interface of a Broadworks softswitch"
-authors = ["Nigel Metheringham <nigelm@cpan.org>"]
+authors = [
+  { name = "Nigel Metheringham", email = "nigelm@cpan.org" },
+  { name = "staticdev", email = "staticdev-support@proton.me" }
+]
 license = "BSD"
 readme = "README.md"
 homepage = "https://pypi.org/project/broadworks-ocip/"
@@ -41,12 +44,12 @@ null-object = ">=0.1.0"
 pyyaml = ">=6.0.1"
 
 [poetry.group.dev.dependencies]
-pytest = "^6.2.5"
+pytest = ">=8.3.5"
 toposort = "^1.7"
 xmlschema = "^1.9.2"
-mkdocs = "^1.2.1"
-mkdocs-material = "^8.1.7"
-mkdocstrings = { version = "^0.17.0", python = ">=3.6.2,<4.0" }
+mkdocs = ">1.2.1"
+mkdocs-material = ">8.1.7"
+mkdocstrings = { version = "^0.29.0", python = ">=3.9.0,<4.0" }
 tiangolo-markdown-include = "^0.7.0"
 python-semantic-release = "^7.23.0"
 py-markdown-table = "^0.2.2"
