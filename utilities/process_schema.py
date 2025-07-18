@@ -115,7 +115,7 @@ def write_element(element) -> str:
             contents.append(write_element(subelement))
         outstr += f"[{' '.join(contents)}],"
     else:
-        outstr += f'{element["type"]},'
+        outstr += f"{element['type']},"
     for query in (
         "is_complex",
         "is_required",

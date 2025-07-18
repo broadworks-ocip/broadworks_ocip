@@ -1,9 +1,13 @@
-[tool.poetry]
+[project]
 name = "broadworks_ocip"
 version = "2.2.0"
 description = "API interface to the OCI-P provisioning interface of a Broadworks softswitch"
-authors = ["Nigel Metheringham <nigelm@cpan.org>"]
-license = "BSD"
+requires-python = ">=3.9.0"
+authors = [
+  { name = "Nigel Metheringham", email = "nigelm@cpan.org" },
+  { name = "staticdev", email = "staticdev-support@proton.me" }
+]
+license = {text = "BSD"}
 readme = "README.md"
 homepage = "https://pypi.org/project/broadworks-ocip/"
 repository = "https://github.com/nigelm/broadworks_ocip"
@@ -14,11 +18,11 @@ classifiers = [
     "License :: OSI Approved :: BSD License",
     "Natural Language :: English",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 include = [
@@ -33,31 +37,30 @@ exclude = [
     "**/*.py[oc]"
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.6.2"
-lxml = "4.9.4"
-attrs = "^21.4.0"
-null-object = "^0.1.0"
-pyyaml = "6.0.1"
+dependencies = [
+    "lxml>=5.4.0",
+    "attrs>=21.4.0",
+    "null-object>=0.1.0",
+    "pyyaml>=6.0.1",
+]
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
-toposort = "^1.7"
-xmlschema = "^1.9.2"
-mkdocs = "^1.2.1"
-mkdocs-material = "^8.1.7"
-mkdocstrings = { version = "^0.17.0", python = ">=3.6.2,<4.0" }
-tiangolo-markdown-include = "^0.7.0"
-python-semantic-release = "^7.23.0"
-py-markdown-table = "^0.2.2"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "mkdocs-material>=8.1.7",
+    "mkdocs>=1.2.1",
+    "mkdocstrings>=0.29.0",
+    "nox>=2024.10.9",
+    "py-markdown-table>=0.2.2",
+    "pytest>=8.3.5",
+    "python-semantic-release>=7.23.0",
+    "tiangolo-markdown-include>=0.7.0",
+    "toposort>=1.7",
+    "xmlschema>=1.9.2",
+]
 
 [tool.semantic_release]
 branch = "master"
-version_toml = [ "pyproject.toml:tool.poetry.version" ]
+version_toml = [ "pyproject.toml:project.version" ]
 version_pattern = [
     'README.md:Version: `(\d+\.\d+\.\d+)`',
     'broadworks_ocip/__init__.py:__version__ = "(\d+\.\d+\.\d+)"',
@@ -65,7 +68,7 @@ version_pattern = [
 version_source = "tag"
 commit_version_number = true
 patch_without_tag = true
-build_command = "poetry build"
+build_command = "uv build"
 upload_to_pypi = false
 check_build_status = false
 
@@ -78,3 +81,7 @@ lint.isort.force-single-line = true
 lint.isort.force-sort-within-sections = true
 
 # end
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
