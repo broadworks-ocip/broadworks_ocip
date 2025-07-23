@@ -1,8 +1,8 @@
 site_name: broadworks_ocip
 site_description: "Automatic documentation from sources, for MkDocs."
-site_url: "https://nigelm.github.io/broadworks_ocip/"
-repo_url: "https://github.com/nigelm/broadworks_ocip"
-repo_name: "nigelm/broadworks_ocip"
+site_url: "https://broadworks-ocip.github.io"
+repo_url: "https://github.com/broadworks-ocip/broadworks_ocip"
+repo_name: "broadworks-ocip/broadworks_ocip"
 
 nav:
     - Overview: index.md

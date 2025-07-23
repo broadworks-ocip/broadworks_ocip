@@ -53,7 +53,7 @@ dev = [
     "py-markdown-table>=0.2.2",
     "pytest>=8.3.5",
     "python-semantic-release>=7.23.0",
-    "tiangolo-markdown-include>=0.7.0",
+    "markdown-include>=0.8.1",
     "toposort>=1.7",
     "xmlschema>=1.9.2",
 ]

@@ -54,7 +54,7 @@ wheels = [
 
 [[package]]
 name = "broadworks-ocip"
-version = "2.2.0"
+version = "3.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "attrs" },
@@ -65,6 +65,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "markdown-include" },
     { name = "mkdocs" },
     { name = "mkdocs-material" },
     { name = "mkdocstrings" },
@@ -72,7 +73,6 @@ dev = [
     { name = "py-markdown-table" },
     { name = "pytest" },
     { name = "python-semantic-release" },
-    { name = "tiangolo-markdown-include" },
     { name = "toposort" },
     { name = "xmlschema" },
 ]
@@ -87,6 +87,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "markdown-include", specifier = ">=0.8.1" },
     { name = "mkdocs", specifier = ">=1.2.1" },
     { name = "mkdocs-material", specifier = ">=8.1.7" },
     { name = "mkdocstrings", specifier = ">=0.29.0" },
@@ -94,7 +95,6 @@ dev = [
     { name = "py-markdown-table", specifier = ">=0.2.2" },
     { name = "pytest", specifier = ">=8.3.5" },
     { name = "python-semantic-release", specifier = ">=7.23.0" },
-    { name = "tiangolo-markdown-include", specifier = ">=0.7.0" },
     { name = "toposort", specifier = ">=1.7" },
     { name = "xmlschema", specifier = ">=1.9.2" },
 ]
@@ -494,6 +494,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d7/c2/4ab49206c17f75cb08d6311171f2d65798988db4360c4d1485bd0eedd67c/markdown-3.8.2.tar.gz", hash = "sha256:247b9a70dd12e27f67431ce62523e675b866d254f900c4fe75ce3dda62237c45", size = 362071, upload-time = "2025-06-19T17:12:44.483Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/96/2b/34cc11786bc00d0f04d0f5fdc3a2b1ae0b6239eef72d3d345805f9ad92a1/markdown-3.8.2-py3-none-any.whl", hash = "sha256:5c83764dbd4e00bdd94d85a19b8d55ccca20fe35b2e678a1422b380324dd5f24", size = 106827, upload-time = "2025-06-19T17:12:42.994Z" },
+]
+
+[[package]]
+name = "markdown-include"
+version = "0.8.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ad/d8/66bf162fe6c1adb619f94a6da599323eecacf15b6d57469d0fd0421c10df/markdown-include-0.8.1.tar.gz", hash = "sha256:1d0623e0fc2757c38d35df53752768356162284259d259c486b4ab6285cdbbe3", size = 21873, upload-time = "2023-02-07T09:47:26.608Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d7/e2/c4d20b21a05fe0fee571649cebc05f7f72e80b1a743f932e7326125e6c9e/markdown_include-0.8.1-py3-none-any.whl", hash = "sha256:32f0635b9cfef46997b307e2430022852529f7a5b87c0075c504283e7cc7db53", size = 18837, upload-time = "2023-02-07T09:47:25.03Z" },
 ]
 
 [[package]]
@@ -1119,18 +1131,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/44/cd/a040c4b3119bbe532e5b0732286f805445375489fceaec1f48306068ee3b/smmap-5.0.2.tar.gz", hash = "sha256:26ea65a03958fa0c8a1c7e8c7a58fdc77221b8910f6be2131affade476898ad5", size = 22329, upload-time = "2025-01-02T07:14:40.909Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/04/be/d09147ad1ec7934636ad912901c5fd7667e1c858e19d355237db0d0cd5e4/smmap-5.0.2-py3-none-any.whl", hash = "sha256:b30115f0def7d7531d22a0fb6502488d879e75b260a9db4d0819cfb25403af5e", size = 24303, upload-time = "2025-01-02T07:14:38.724Z" },
-]
-
-[[package]]
-name = "tiangolo-markdown-include"
-version = "0.7.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "markdown" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/ef/d0/41c202180dfbf3ed481f1098a54c54d2e92c3f6460b37f5c47ad5fd492e1/tiangolo-markdown-include-0.7.0.tar.gz", hash = "sha256:db41146a27debd028cf38b79ef46d39b6ef0e00abd9d49cf4e217c81025a522b", size = 4842, upload-time = "2021-07-24T21:10:14.53Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/df/3b/43890074c0deb1e8d3ac646bcb7b5901d6aca5173a26954fb9a426fe9df0/tiangolo_markdown_include-0.7.0-py3-none-any.whl", hash = "sha256:9471ff0f72fc331db20a3d1410e6a6b80706ca0d95acb5562dbd82e5d6bb9a83", size = 17460, upload-time = "2021-07-24T21:10:13.068Z" },
 ]
 
 [[package]]
