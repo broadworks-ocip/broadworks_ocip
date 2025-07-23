@@ -1,68 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/changelog/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/changelog/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/contributing/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/contributing/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/internals/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/internals/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/license/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/license/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/todo/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/todo/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/usage/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/usage/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/api/api/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/api/api/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/api/base/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/api/base/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/api/exceptions/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/api/exceptions/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/api/requests/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/api/requests/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/api/responses/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/api/responses/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
     <url>
-         <loc>https://nigelm.github.io/broadworks_ocip/api/types/</loc>
-         <lastmod>2024-04-01</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://broadworks-ocip.github.io/api/types/</loc>
+         <lastmod>2025-07-23</lastmod>
     </url>
 </urlset>

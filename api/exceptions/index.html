@@ -10,10 +10,17 @@
       
       
       
-        <link rel="canonical" href="https://nigelm.github.io/broadworks_ocip/api/exceptions/">
+        <link rel="canonical" href="https://broadworks-ocip.github.io/api/exceptions/">
+      
+      
+        <link rel="prev" href="../base/">
+      
+      
+        <link rel="next" href="../requests/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -21,13 +28,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c5ef100.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
-        
       
+
+
     
+    
+      
     
     
       
@@ -43,23 +51,18 @@
     
       <link rel="stylesheet" href="../../css/mkdocstrings.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
+    
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -79,16 +82,19 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="broadworks_ocip" class="md-header__button md-logo" aria-label="broadworks_ocip" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -108,49 +114,59 @@
     </div>
     
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
-        <a href="https://github.com/nigelm/broadworks_ocip" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/broadworks-ocip/broadworks_ocip" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    nigelm/broadworks_ocip
+    broadworks-ocip/broadworks_ocip
   </div>
 </a>
       </div>
@@ -177,25 +193,26 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="broadworks_ocip" class="md-nav__button md-logo" aria-label="broadworks_ocip" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     broadworks_ocip
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/nigelm/broadworks_ocip" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/broadworks-ocip/broadworks_ocip" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    nigelm/broadworks_ocip
+    broadworks-ocip/broadworks_ocip
   </div>
 </a>
     </div>
@@ -204,14 +221,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Overview
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -219,14 +243,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../usage/" class="md-nav__link">
-        Usage
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -234,84 +265,129 @@
     
       
       
-      
-
   
   
     
   
   
+  
+    
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          API Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          API Reference
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
           
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            API Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../api/" class="md-nav__link">
-        API
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../base/" class="md-nav__link">
-        Base Classes
+        
+  
+  
+  <span class="md-ellipsis">
+    Base Classes
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Exceptions
+          
+  
+  
+  <span class="md-ellipsis">
+    Exceptions
+    
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Exceptions
+        
+  
+  
+  <span class="md-ellipsis">
+    Exceptions
+    
+  </span>
+  
+
       </a>
       
         
@@ -331,148 +407,73 @@
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions" class="md-nav__link">
-    broadworks_ocip.exceptions
+    <span class="md-ellipsis">
+      exceptions
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIError" class="md-nav__link">
-    OCIError
+    <span class="md-ellipsis">
+      OCIError
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIError">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIError.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorAPISetup" class="md-nav__link">
-    OCIErrorAPISetup
+    <span class="md-ellipsis">
+      OCIErrorAPISetup
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorAPISetup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorAPISetup.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorAttributeMissing" class="md-nav__link">
-    OCIErrorAttributeMissing
+    <span class="md-ellipsis">
+      OCIErrorAttributeMissing
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorAttributeMissing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorAttributeMissing.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorResponse" class="md-nav__link">
-    OCIErrorResponse
+    <span class="md-ellipsis">
+      OCIErrorResponse
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorResponse">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorResponse.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorTimeOut" class="md-nav__link">
-    OCIErrorTimeOut
+    <span class="md-ellipsis">
+      OCIErrorTimeOut
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorTimeOut">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorTimeOut.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorUnexpectedAttribute" class="md-nav__link">
-    OCIErrorUnexpectedAttribute
+    <span class="md-ellipsis">
+      OCIErrorUnexpectedAttribute
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorUnexpectedAttribute">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorUnexpectedAttribute.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorUnknown" class="md-nav__link">
-    OCIErrorUnknown
+    <span class="md-ellipsis">
+      OCIErrorUnknown
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorUnknown">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorUnknown.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -483,66 +484,101 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../requests/" class="md-nav__link">
-        Requests
+        
+  
+  
+  <span class="md-ellipsis">
+    Requests
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../responses/" class="md-nav__link">
-        Responses
+        
+  
+  
+  <span class="md-ellipsis">
+    Responses
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../types/" class="md-nav__link">
-        Types
+        
+  
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../internals/" class="md-nav__link">
-        Internal Design
+        
+  
+  
+  <span class="md-ellipsis">
+    Internal Design
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -550,14 +586,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../contributing/" class="md-nav__link">
-        Contributing
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -565,14 +608,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../changelog/" class="md-nav__link">
-        Changelog
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -580,14 +630,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../license/" class="md-nav__link">
-        License
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -595,14 +652,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../todo/" class="md-nav__link">
-        To Do
+        
+  
+  
+  <span class="md-ellipsis">
+    To Do
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -636,148 +700,73 @@
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions" class="md-nav__link">
-    broadworks_ocip.exceptions
+    <span class="md-ellipsis">
+      exceptions
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIError" class="md-nav__link">
-    OCIError
+    <span class="md-ellipsis">
+      OCIError
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIError">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIError.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorAPISetup" class="md-nav__link">
-    OCIErrorAPISetup
+    <span class="md-ellipsis">
+      OCIErrorAPISetup
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorAPISetup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorAPISetup.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorAttributeMissing" class="md-nav__link">
-    OCIErrorAttributeMissing
+    <span class="md-ellipsis">
+      OCIErrorAttributeMissing
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorAttributeMissing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorAttributeMissing.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorResponse" class="md-nav__link">
-    OCIErrorResponse
+    <span class="md-ellipsis">
+      OCIErrorResponse
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorResponse">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorResponse.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorTimeOut" class="md-nav__link">
-    OCIErrorTimeOut
+    <span class="md-ellipsis">
+      OCIErrorTimeOut
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorTimeOut">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorTimeOut.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorUnexpectedAttribute" class="md-nav__link">
-    OCIErrorUnexpectedAttribute
+    <span class="md-ellipsis">
+      OCIErrorUnexpectedAttribute
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorUnexpectedAttribute">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorUnexpectedAttribute.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#broadworks_ocip.exceptions.OCIErrorUnknown" class="md-nav__link">
-    OCIErrorUnknown
+    <span class="md-ellipsis">
+      OCIErrorUnknown
+    </span>
   </a>
-  
-    <nav class="md-nav" aria-label="OCIErrorUnknown">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#broadworks_ocip.exceptions.OCIErrorUnknown.__init__" class="md-nav__link">
-    __init__()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -789,14 +778,15 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/nigelm/broadworks_ocip/edit/master/docs/api/exceptions.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+                  
 
+
+  
+  
 
 
 <h1 id="exceptions">Exceptions</h1>
@@ -804,13 +794,21 @@
 exceptions that things like communications issues can throw as well:</p>
 
 
-  <div class="doc doc-object doc-module">
+<div class="doc doc-object doc-module">
+
+
 
 <a id="broadworks_ocip.exceptions"></a>
     <div class="doc doc-contents first">
 
-      <p>Broadworks OCI-P Interface Exception Classes</p>
+        <p>Broadworks OCI-P Interface Exception Classes</p>
 <p>Exception classes used by the API.</p>
+
+
+
+
+
+
 
 
 
@@ -822,50 +820,84 @@ exceptions that things like communications issues can throw as well:</p>
 
 
 
-  <div class="doc doc-object doc-class">
+
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIError" class="doc doc-heading">
-        <code>
-OCIError            (<span title="Exception">Exception</span>)
-        </code>
-
+            <code>OCIError</code>
 
 
 </h2>
 
+
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="Exception">Exception</span></code></p>
 
-      <p>Base Exception raised by OCI operations.</p>
 
-<p><strong>Attributes:</strong></p>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-        <td><code>message</code></td>
-        <td><code>str</code></td>
-        <td><p>explanation of why it went bang</p></td>
-      </tr>
-      <tr>
-        <td><code>object</code></td>
-        <td></td>
-        <td><p>the thing that went bang</p></td>
-      </tr>
-  </tbody>
-</table>
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Base Exception raised by OCI operations.</span>
+        <p>Base Exception raised by OCI operations.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="broadworks_ocip.exceptions.OCIError.message">message</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>explanation of why it went bang</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="broadworks_ocip.exceptions.OCIError.object">object</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>the thing that went bang</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Base Exception raised by OCI operations.</span>
 
 <span class="sd">    Attributes:</span>
 <span class="sd">        message: explanation of why it went bang</span>
@@ -875,10 +907,10 @@ OCIError            (<span title="Exception">Exception</span>)
     <span class="n">message</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">()</span>
     <span class="nb">object</span> <span class="o">=</span> <span class="n">attr</span><span class="o">.</span><span class="n">ib</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="si">}</span><span class="s2">)&quot;</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -894,78 +926,58 @@ OCIError            (<span title="Exception">Exception</span>)
 
 
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="broadworks_ocip.exceptions.OCIError.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIError.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
-
-
   </div>
 
     </div>
 
-  </div>
+</div>
 
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIErrorAPISetup" class="doc doc-heading">
-        <code>
-OCIErrorAPISetup            (<a title="broadworks_ocip.exceptions.OCIError" href="#broadworks_ocip.exceptions.OCIError">OCIError</a>)
-        </code>
-
+            <code>OCIErrorAPISetup</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
-      <p>Exception raised when life becomes too much for the software.</p>
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="OCIError (broadworks_ocip.exceptions.OCIError)" href="#broadworks_ocip.exceptions.OCIError">OCIError</a></code></p>
+
+
+        <p>Exception raised when life becomes too much for the software.</p>
 <p>Subclass of OCIError()</p>
 
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIErrorAPISetup</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIErrorAPISetup</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Exception raised when life becomes too much for the software.</span>
 
 <span class="sd">    Subclass of OCIError()</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">pass</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -979,78 +991,60 @@ OCIErrorAPISetup            (<a title="broadworks_ocip.exceptions.OCIError" href
 
 
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="broadworks_ocip.exceptions.OCIErrorAPISetup.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIErrorAPISetup.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
 
 
   </div>
 
     </div>
 
-  </div>
+</div>
 
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIErrorAttributeMissing" class="doc doc-heading">
-        <code>
-OCIErrorAttributeMissing            (<a title="broadworks_ocip.exceptions.OCIError" href="#broadworks_ocip.exceptions.OCIError">OCIError</a>)
-        </code>
-
+            <code>OCIErrorAttributeMissing</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
-      <p>Exception raised when a required attribute is missing.</p>
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="OCIError (broadworks_ocip.exceptions.OCIError)" href="#broadworks_ocip.exceptions.OCIError">OCIError</a></code></p>
+
+
+        <p>Exception raised when a required attribute is missing.</p>
 <p>Subclass of OCIError()</p>
 
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIErrorAttributeMissing</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIErrorAttributeMissing</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Exception raised when a required attribute is missing.</span>
 
 <span class="sd">    Subclass of OCIError()</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">pass</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -1064,78 +1058,60 @@ OCIErrorAttributeMissing            (<a title="broadworks_ocip.exceptions.OCIErr
 
 
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="broadworks_ocip.exceptions.OCIErrorAttributeMissing.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIErrorAttributeMissing.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
 
 
   </div>
 
     </div>
 
-  </div>
+</div>
 
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIErrorResponse" class="doc doc-heading">
-        <code>
-OCIErrorResponse            (<a title="broadworks_ocip.exceptions.OCIError" href="#broadworks_ocip.exceptions.OCIError">OCIError</a>)
-        </code>
-
+            <code>OCIErrorResponse</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
-      <p>Exception raised when an ErrorResponse is received and decoded.</p>
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="OCIError (broadworks_ocip.exceptions.OCIError)" href="#broadworks_ocip.exceptions.OCIError">OCIError</a></code></p>
+
+
+        <p>Exception raised when an ErrorResponse is received and decoded.</p>
 <p>Subclass of OCIError()</p>
 
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIErrorResponse</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIErrorResponse</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Exception raised when an ErrorResponse is received and decoded.</span>
 
 <span class="sd">    Subclass of OCIError()</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">pass</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -1149,78 +1125,60 @@ OCIErrorResponse            (<a title="broadworks_ocip.exceptions.OCIError" href
 
 
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="broadworks_ocip.exceptions.OCIErrorResponse.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIErrorResponse.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
 
 
   </div>
 
     </div>
 
-  </div>
+</div>
 
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIErrorTimeOut" class="doc doc-heading">
-        <code>
-OCIErrorTimeOut            (<a title="broadworks_ocip.exceptions.OCIError" href="#broadworks_ocip.exceptions.OCIError">OCIError</a>)
-        </code>
-
+            <code>OCIErrorTimeOut</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
-      <p>Exception raised when nothing is head back from the server.</p>
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="OCIError (broadworks_ocip.exceptions.OCIError)" href="#broadworks_ocip.exceptions.OCIError">OCIError</a></code></p>
+
+
+        <p>Exception raised when nothing is head back from the server.</p>
 <p>Subclass of OCIError()</p>
 
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIErrorTimeOut</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIErrorTimeOut</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Exception raised when nothing is head back from the server.</span>
 
 <span class="sd">    Subclass of OCIError()</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">pass</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -1234,78 +1192,60 @@ OCIErrorTimeOut            (<a title="broadworks_ocip.exceptions.OCIError" href=
 
 
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="broadworks_ocip.exceptions.OCIErrorTimeOut.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIErrorTimeOut.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
 
 
   </div>
 
     </div>
 
-  </div>
+</div>
 
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIErrorUnexpectedAttribute" class="doc doc-heading">
-        <code>
-OCIErrorUnexpectedAttribute            (<a title="broadworks_ocip.exceptions.OCIError" href="#broadworks_ocip.exceptions.OCIError">OCIError</a>)
-        </code>
-
+            <code>OCIErrorUnexpectedAttribute</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
-      <p>Exception raised when additional elements passed to <strong>init</strong></p>
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="OCIError (broadworks_ocip.exceptions.OCIError)" href="#broadworks_ocip.exceptions.OCIError">OCIError</a></code></p>
+
+
+        <p>Exception raised when additional elements passed to <strong>init</strong></p>
 <p>Subclass of OCIError()</p>
 
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIErrorUnexpectedAttribute</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIErrorUnexpectedAttribute</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Exception raised when additional elements passed to __init__</span>
 
 <span class="sd">    Subclass of OCIError()</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">pass</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -1319,78 +1259,60 @@ OCIErrorUnexpectedAttribute            (<a title="broadworks_ocip.exceptions.OCI
 
 
 
-  <div class="doc doc-object doc-method">
-
-
-
-<h3 id="broadworks_ocip.exceptions.OCIErrorUnexpectedAttribute.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIErrorUnexpectedAttribute.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
-
-  </div>
-
-
-
 
 
   </div>
 
     </div>
 
-  </div>
+</div>
 
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="broadworks_ocip.exceptions.OCIErrorUnknown" class="doc doc-heading">
-        <code>
-OCIErrorUnknown            (<a title="broadworks_ocip.exceptions.OCIError" href="#broadworks_ocip.exceptions.OCIError">OCIError</a>)
-        </code>
-
+            <code>OCIErrorUnknown</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
-      <p>Exception raised when life becomes too much for the software.</p>
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="OCIError (broadworks_ocip.exceptions.OCIError)" href="#broadworks_ocip.exceptions.OCIError">OCIError</a></code></p>
+
+
+        <p>Exception raised when life becomes too much for the software.</p>
 <p>Subclass of OCIError()</p>
 
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">OCIErrorUnknown</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attr</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">OCIErrorUnknown</span><span class="p">(</span><span class="n">OCIError</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Exception raised when life becomes too much for the software.</span>
 
 <span class="sd">    Subclass of OCIError()</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">pass</span>
-</code></pre></div>
-        </details>
+</code></pre></div></td></tr></table></div>
+              </details>
 
 
 
@@ -1404,35 +1326,13 @@ OCIErrorUnknown            (<a title="broadworks_ocip.exceptions.OCIError" href=
 
 
 
-  <div class="doc doc-object doc-method">
 
-
-
-<h3 id="broadworks_ocip.exceptions.OCIErrorUnknown.__init__" class="doc doc-heading">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
-  <span class="doc doc-properties">
-      <small class="doc doc-property doc-property-special"><code>special</code></small>
-  </span>
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Method generated by attrs for class OCIErrorUnknown.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>broadworks_ocip/exceptions.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="nb">object</span><span class="o">=</span><span class="n">attr_dict</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">default</span><span class="p">):</span>
-    <span class="n">_setattr</span> <span class="o">=</span> <span class="n">_cached_setattr</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-    <span class="n">_setattr</span><span class="p">(</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
-</code></pre></div>
-        </details>
-    </div>
 
   </div>
 
+    </div>
+
+</div>
 
 
 
@@ -1441,7 +1341,7 @@ OCIErrorUnknown            (<a title="broadworks_ocip.exceptions.OCIError" href=
 
     </div>
 
-  </div>
+</div>
 
 
 
@@ -1449,55 +1349,22 @@ OCIErrorUnknown            (<a title="broadworks_ocip.exceptions.OCIError" href=
 
 
 
-  </div>
 
-    </div>
 
-  </div>
 
-              
-            </article>
-          </div>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../base/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Base Classes" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Base Classes
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../requests/" class="md-footer__link md-footer__link--next" aria-label="Next: Requests" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Requests
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1519,10 +1386,14 @@ OCIErrorUnknown            (<a title="broadworks_ocip.exceptions.OCIError" href=
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.748e2769.min.js"></script>
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
