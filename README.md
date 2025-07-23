@@ -7,7 +7,7 @@
 `broadworks_ocip` interfaces to the OCI-P provisioning interface of a Broadworks softswitch
 
 -   Free software: BSD license
--   Documentation: https://nigelm.github.io/broadworks_ocip/
+-   Documentation: https://broadworks-ocip.github.io/broadworks_ocip/
 
 ---
 
