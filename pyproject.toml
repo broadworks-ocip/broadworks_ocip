@@ -11,7 +11,7 @@ license = {text = "BSD"}
 readme = "README.md"
 homepage = "https://pypi.org/project/broadworks-ocip/"
 repository = "https://github.com/nigelm/broadworks_ocip"
-documentation = "https://nigelm.github.io/broadworks_ocip/"
+documentation = "https://broadworks-ocip.github.io/broadworks_ocip/"
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",
